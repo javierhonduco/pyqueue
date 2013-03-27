@@ -72,4 +72,4 @@ class Queue:
 		while current is not None:
 			result += str(current.element) + ", "
 			current = current.next
-		return result
+		return result 
