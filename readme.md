@@ -7,5 +7,11 @@ Includes a simple server that can be tested from telnet, however only the enqueu
 #API
 The API is a piece of cake, just, create a class' instance, and you´ll be able to call de queue, dequeue, size, toList, toString, isEmpty, void, first, last...
 
-#Requirements
+#Server
+To fire up the server, just type `python server.py 127.0.0.1:1234`. Replace it to what feets your needs
+
+#Server's requirements
 gevent.
+
+#BTW...
+Do what you want with it ;D
