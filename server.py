@@ -28,6 +28,8 @@ def handle(socket, address):
 			fileobj.write(el)    	
 		fileobj.flush()
 
+
+
 if __name__ == "__main__":
 	host, port = sys.argv[1].split(":")
 	server = StreamServer((host, int(port)) , handle)
