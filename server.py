@@ -16,7 +16,7 @@ def handle(socket, address):
 			print ("client disconnected")
 			break
 		if line.strip().lower() == 'quit':
-			print ("client quit")
+			print ("client has gone :(")
 			break
 		if line.startswith("ENQUEUE"):
 			data = line.split("ENQUEUE:")[1]   
