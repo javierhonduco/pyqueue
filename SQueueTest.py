@@ -27,9 +27,9 @@ class Enqueue(unittest.TestCase):
 		assert queue.toList() == [5]
 		assert queue.dequeue() == 5
 		assert queue.isEmpty()
-                for a in xrange(5000):
+                for a in xrange(5000000000):
                         queue.enqueue(random.uniform(0, 999999))  
-		assert queue.size() == 5000
+		assert queue.size() == 50000000000
 
 
 
