@@ -29,7 +29,7 @@ class Enqueue(unittest.TestCase):
 		assert queue.isEmpty()
                 for a in xrange(500000):
                         queue.enqueue(random.uniform(0, 999999))  
-		assert queue.size() == 5000000
+		assert queue.size() == 500000
 
 
 
