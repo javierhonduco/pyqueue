@@ -1,11 +1,12 @@
 import unittest
-
+import random
 from SQueue import Queue
 queue = Queue()
 
 class Enqueue(unittest.TestCase):
 	""" TODO: Decouple test, generate them automatically, test settings. """
 	def runTest(self):
+                
 		assert queue.isEmpty()
 		assert queue.size() == 0
 		assert queue.toList() == []
@@ -26,7 +27,13 @@ class Enqueue(unittest.TestCase):
 		assert queue.toList() == [5]
 		assert queue.dequeue() == 5
 		assert queue.isEmpty()
-		assert queue.size() == 0
+                for a in xrange(5000):
+                        queue.enqueue(random.uniform(0, 999999)
+         
+                 
+		assert queue.size() != 0
+
+
 
 if __name__ == '__main__':
 
